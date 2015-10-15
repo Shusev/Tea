@@ -1,0 +1,2120 @@
+<!DOCKTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Магазин чая
+        </title>
+        <!-- SEO -->
+        <meta name="description" content="Tea_shop">
+        <meta name="keywords" content="Tea_shop">
+        <meta name="author" content="Nikolay Shusev">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+
+        <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- html5shiv -->
+        <!--[if lt IE 8]>
+        <script src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+        <![endif]--> 
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]--> 
+        <header>
+            <div class="container clearfix">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" width="205px" height="95px" alt="Логотип магазин чая">
+                        <p class="phone">
+                            (+7 897 120 45 45)
+                        </p>
+                    </a>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Наши скидки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Способы оплаты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Вакансии
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart_form clearfix">
+                    <div class="cart">
+                        <img class="cart_image" src="img/cart.png" width="34" height="24" alt="Корзина">
+                        <p>
+                            <span class="count">0</span> товаров
+                            <br>
+                            <span class="price" price="0" id="price">0</span>
+                        </p>
+                    </div>
+                    <div class="order" id="cart_show">
+                        <p>
+                            Ваш заказ >
+                        </p>
+                    </div>
+                    <div class="cart_container clearfix" id="cart_container">
+                        <div class="cart_container_header" id="cart_hide">
+                            <img class="cart_image" src="img/cart.png" width="34" height="24" alt="Корзина">
+                            <p>
+                                <span class="count">0</span> товаров
+                                <br>
+                                <span class="price" price="0" id="price">0</span>
+                            </p>
+                        </div>
+                        <div class="cart_container_sum clearfix">
+                            <div class="total">
+                                <div class="sum">
+                                    Итого
+                                </div>
+                                <div class="sum_weight">
+                                    0 гр.
+                                </div>
+                                <div class="sum_price">
+                                    <span class="price" price="0" id="price">0</span>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="cart_container_footer clearfix">
+                            <form action="mail.php" method= "POST"><input type="text" name="name" class="form_name" placeholder="Как к Вам обращаться?"><div class="plus_7">
+                                +7             
+                            </div><input type="text" name="phone" class="form_phone">
+                            <input class="submit" type="submit" value="Оформить заказ">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container clearfix">
+            <div class="menu">
+                <ul>
+                    <li class="li_menu">
+                        Белый
+                        <ul class="sub_menu">
+                            <li>
+                                Шу пуэр
+                            </li>
+                            <li>
+                                Шен пуэр
+                            </li>
+                            <li>
+                                Пресованный пуэр
+                            </li>
+                            <li>
+                                Рассыпной пуэр
+                            </li>
+                            <li>
+                                Ароматизированный пуэр
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li_menu">
+                        Желтый чай
+                        <ul class="sub_menu">
+                            <li>
+                                Шу пуэр
+                            </li>
+                            <li>
+                                Шен пуэр
+                            </li>
+                            <li>
+                                Пресованный пуэр
+                            </li>
+                            <li>
+                                Рассыпной пуэр
+                            </li>
+                            <li>
+                                Ароматизированный пуэр
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li_menu">
+                        Красный чай
+                        <ul class="sub_menu">
+                            <li>
+                                Шу пуэр
+                            </li>
+                            <li>
+                                Шен пуэр
+                            </li>
+                            <li>
+                                Пресованный пуэр
+                            </li>
+                            <li>
+                                Рассыпной пуэр
+                            </li>
+                            <li>
+                                Ароматизированный пуэр
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li_menu">
+                        Зеленый чай
+                        <ul class="sub_menu">
+                            <li>
+                                Шу пуэр
+                            </li>
+                            <li>
+                                Шен пуэр
+                            </li>
+                            <li>
+                                Пресованный пуэр
+                            </li>
+                            <li>
+                                Рассыпной пуэр
+                            </li>
+                            <li>
+                                Ароматизированный пуэр
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li_menu">
+                        Пуэр
+                        <ul class="sub_menu">
+                            <li>
+                                Шу пуэр
+                            </li>
+                            <li>
+                                Шен пуэр
+                            </li>
+                            <li>
+                                Пресованный пуэр
+                            </li>
+                            <li>
+                                Рассыпной пуэр
+                            </li>
+                            <li>
+                                Ароматизированный пуэр
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li_menu">
+                        Улуны
+                        <ul class="sub_menu">
+                            <li>
+                                Шу пуэр
+                            </li>
+                            <li>
+                                Шен пуэр
+                            </li>
+                            <li>
+                                Пресованный пуэр
+                            </li>
+                            <li>
+                                Рассыпной пуэр
+                            </li>
+                            <li>
+                                Ароматизированный пуэр
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner">
+                <h2>
+                    Закажите на сумму более 500 р
+                </h2>
+                <h3>
+                    и мы доставим заказ абсолютно бесплатно
+                </h3>
+            </div>
+            <h1>
+                    Выберите "свой" чай
+            </h1>
+            <div class="cards cards_first active">
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Красный чай
+                        </h2>
+                        <p>
+                            Янтарно-рубиновый напи&shy;ток с ароматом сухо&shy;фрук&shy;тов, сливок, щоколада и меда
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">110</span>
+                        <div class="card_btn" id="add_item" price="110" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Малиновый улун с Годжи
+                        </h2>
+                        <p>
+                            Улун с ягодами Годжи обла&shy;дает непревзойденным вкусом и  ароматом свеже&shy;сорванной малины
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">50</span>
+                        <div class="card_btn" id="add_item" price="50" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">230</span>
+                        <div class="card_btn" id="add_item" price="230" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Красный чай
+                        </h2>
+                        <p>
+                            Янтарно-рубиновый напи&shy;ток с ароматом сухо&shy;фрук&shy;тов, сливок, щоколада и меда
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">110</span>
+                        <div class="card_btn" id="add_item" price="110" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Малиновый улун с Годжи
+                        </h2>
+                        <p>
+                            Улун с ягодами Годжи обла&shy;дает непревзойденным вкусом и  ароматом свеже&shy;сорванной малины
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards cards_second">
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards cards_third">
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards cards_fourth">
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Малиновый улун с Годжи
+                        </h2>
+                        <p>
+                            Улун с ягодами Годжи обла&shy;дает непревзойденным вкусом и  ароматом свеже&shy;сорванной малины
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">50</span>
+                        <div class="card_btn" id="add_item" price="50" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Малиновый улун с Годжи
+                        </h2>
+                        <p>
+                            Улун с ягодами Годжи обла&shy;дает непревзойденным вкусом и  ароматом свеже&shy;сорванной малины
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">50</span>
+                        <div class="card_btn" id="add_item" price="50" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Малиновый улун с Годжи
+                        </h2>
+                        <p>
+                            Улун с ягодами Годжи обла&shy;дает непревзойденным вкусом и  ароматом свеже&shy;сорванной малины
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">50</span>
+                        <div class="card_btn" id="add_item" price="50" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Малиновый улун с Годжи
+                        </h2>
+                        <p>
+                            Улун с ягодами Годжи обла&shy;дает непревзойденным вкусом и  ароматом свеже&shy;сорванной малины
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">50</span>
+                        <div class="card_btn" id="add_item" price="50" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Малиновый улун с Годжи
+                        </h2>
+                        <p>
+                            Улун с ягодами Годжи обла&shy;дает непревзойденным вкусом и  ароматом свеже&shy;сорванной малины
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">50</span>
+                        <div class="card_btn" id="add_item" price="50" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Малиновый улун с Годжи
+                        </h2>
+                        <p>
+                            Улун с ягодами Годжи обла&shy;дает непревзойденным вкусом и  ароматом свеже&shy;сорванной малины
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">50</span>
+                        <div class="card_btn" id="add_item" price="50" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards cards_fifth">
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 id="item_name">
+                            Тегуанинь
+                        </h2>
+                        <p>
+                            Элитный материковый улун с незабываемым цветоч&shy;ным вкусом
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">250</span>
+                        <div class="card_btn" id="add_item" price="250" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards cards_sixth">
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Красный чай
+                        </h2>
+                        <p>
+                            Янтарно-рубиновый напи&shy;ток с ароматом сухо&shy;фрук&shy;тов, сливок, щоколада и меда
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50" rel="1"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">150</span>
+                        <div class="card_btn" id="add_item" price="150" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Красный чай
+                        </h2>
+                        <p>
+                            Янтарно-рубиновый напи&shy;ток с ароматом сухо&shy;фрук&shy;тов, сливок, щоколада и меда
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50" rel="1"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">150</span>
+                        <div class="card_btn" id="add_item" price="150" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Красный чай
+                        </h2>
+                        <p>
+                            Янтарно-рубиновый напи&shy;ток с ароматом сухо&shy;фрук&shy;тов, сливок, щоколада и меда
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50" rel="1"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">150</span>
+                        <div class="card_btn" id="add_item" price="150" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Красный чай
+                        </h2>
+                        <p>
+                            Янтарно-рубиновый напи&shy;ток с ароматом сухо&shy;фрук&shy;тов, сливок, щоколада и меда
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50" rel="1"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">150</span>
+                        <div class="card_btn" id="add_item" price="150" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Красный чай
+                        </h2>
+                        <p>
+                            Янтарно-рубиновый напи&shy;ток с ароматом сухо&shy;фрук&shy;тов, сливок, щоколада и меда
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50" rel="1"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">150</span>
+                        <div class="card_btn" id="add_item" price="150" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+                <div class="card_form">
+                    <a href="card_form.html">
+                        <div class="card_image">
+                            <div class="slider_list_wrap">
+                                <ul class="slider_list">
+                                    <li class="slider_item active">
+                                        <img src="img/tea1.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea2.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                    <li class="slider_item">
+                                        <img src="img/tea3.png" width="200" height="220" alt="tea2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider_controls">
+                                <div href="#" class="slider_controls_btn slider_controls_btn_prev prev">
+                                    <i class="fa fa-arrow-left">
+                                    </i>
+                                </div>
+                                <div href="#" class="slider_controls_btn slider_controls_btn_next next">
+                                    <i class="fa fa-arrow-right">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="item_name">
+                            Красный чай
+                        </h2>
+                        <p>
+                            Янтарно-рубиновый напи&shy;ток с ароматом сухо&shy;фрук&shy;тов, сливок, щоколада и меда
+                        </p>
+                    </a>
+                    <div class="weight">
+                        <span class="minus">
+                            -
+                        </span>
+                        <input type="text" value="50" rel="1"><div class="item_weight">гр.</div>
+                        <span class="plus">
+                            +
+                        </span>
+                        <span class="item_price">150</span>
+                        <div class="card_btn" id="add_item" price="150" rel="1">
+                            Добавить
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="slider_control_btn prev" href="#">
+                    <i class="fa fa-arrow-left">
+                        
+                    </i>
+                </div>
+                <div class="pag_slider_list_wrap">
+                    <div class="pag_slider_list">
+                        <div class="pag_item active_btn" data-class="first">
+                            <span class="pag_btn" >
+                            1
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="second">
+                            <span class="pag_btn" >
+                            2
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="third">
+                            <span class="pag_btn" >
+                            3
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="fourth">
+                            <span class="pag_btn" >
+                            4
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="fifth">
+                            <span class="pag_btn" >
+                            5
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="sixth">
+                            <span class="pag_btn" >
+                            6
+                            </span>
+                        </div>
+                        <!-- <div class="pag_item" data-class="seventh">
+                            <span class="pag_btn" >
+                            7
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="8th">
+                            <span class="pag_btn" >
+                            8
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="9th">
+                            <span class="pag_btn" >
+                            9
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="10th">
+                            <span class="pag_btn" >
+                            10
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="11th">
+                            <span class="pag_btn" >
+                            11
+                            </span>
+                        </div>
+                        <div class="pag_item" data-class="12th">
+                            <span class="pag_btn" >
+                            12
+                            </span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="pag_slider_control_btn next" href="#">
+                    <i class="fa fa-arrow-right">
+                        
+                    </i>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container clearfix">
+                <a href="#">
+                    <img class="footer_logo" src="img/logo.png" width="205px" height="95px" alt="">
+                </a>
+                <div class="footer_navigation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Наши скидки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Способы оплаты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Вакансии
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="call_btn" href="">
+                    Добавить звонок
+                </a>
+            </div>
+        </footer>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js">
+    </script>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+    </body>
+</html>
